@@ -13,6 +13,10 @@
 		091756FC26BBD37100AC3C37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091756FB26BBD37100AC3C37 /* Preview Assets.xcassets */; };
 		091756FE26BBD37100AC3C37 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091756FD26BBD37100AC3C37 /* Persistence.swift */; };
 		0917570126BBD37100AC3C37 /* FriendFaceCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 091756FF26BBD37100AC3C37 /* FriendFaceCD.xcdatamodeld */; };
+		0917571426BBDBF800AC3C37 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917571026BBDBF800AC3C37 /* User+CoreDataClass.swift */; };
+		0917571526BBDBF800AC3C37 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917571126BBDBF800AC3C37 /* User+CoreDataProperties.swift */; };
+		0917571626BBDBF800AC3C37 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917571226BBDBF800AC3C37 /* Friend+CoreDataClass.swift */; };
+		0917571726BBDBF800AC3C37 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0917571326BBDBF800AC3C37 /* Friend+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		091756FD26BBD37100AC3C37 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0917570026BBD37100AC3C37 /* FriendFaceCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FriendFaceCD.xcdatamodel; sourceTree = "<group>"; };
 		0917570226BBD37100AC3C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0917571026BBDBF800AC3C37 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0917571126BBDBF800AC3C37 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0917571226BBDBF800AC3C37 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0917571326BBDBF800AC3C37 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +65,10 @@
 			isa = PBXGroup;
 			children = (
 				091756F426BBD36E00AC3C37 /* FriendFaceCDApp.swift */,
-				091756F626BBD36E00AC3C37 /* ContentView.swift */,
+				0917570C26BBD41500AC3C37 /* Model */,
+				0917570A26BBD40D00AC3C37 /* View */,
 				091756F826BBD37100AC3C37 /* Assets.xcassets */,
-				091756FD26BBD37100AC3C37 /* Persistence.swift */,
 				0917570226BBD37100AC3C37 /* Info.plist */,
-				091756FF26BBD37100AC3C37 /* FriendFaceCD.xcdatamodeld */,
 				091756FA26BBD37100AC3C37 /* Preview Content */,
 			);
 			path = FriendFaceCD;
@@ -73,6 +80,27 @@
 				091756FB26BBD37100AC3C37 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0917570A26BBD40D00AC3C37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				091756F626BBD36E00AC3C37 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0917570C26BBD41500AC3C37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0917571026BBDBF800AC3C37 /* User+CoreDataClass.swift */,
+				0917571126BBDBF800AC3C37 /* User+CoreDataProperties.swift */,
+				0917571226BBDBF800AC3C37 /* Friend+CoreDataClass.swift */,
+				0917571326BBDBF800AC3C37 /* Friend+CoreDataProperties.swift */,
+				091756FF26BBD37100AC3C37 /* FriendFaceCD.xcdatamodeld */,
+				091756FD26BBD37100AC3C37 /* Persistence.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +174,12 @@
 			files = (
 				091756FE26BBD37100AC3C37 /* Persistence.swift in Sources */,
 				091756F726BBD36E00AC3C37 /* ContentView.swift in Sources */,
+				0917571526BBDBF800AC3C37 /* User+CoreDataProperties.swift in Sources */,
 				091756F526BBD36E00AC3C37 /* FriendFaceCDApp.swift in Sources */,
 				0917570126BBD37100AC3C37 /* FriendFaceCD.xcdatamodeld in Sources */,
+				0917571726BBDBF800AC3C37 /* Friend+CoreDataProperties.swift in Sources */,
+				0917571626BBDBF800AC3C37 /* Friend+CoreDataClass.swift in Sources */,
+				0917571426BBDBF800AC3C37 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
