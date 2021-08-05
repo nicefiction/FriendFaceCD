@@ -35,14 +35,14 @@ public class User: NSManagedObject,
       
       let decodedUserContainer = try decoder.container(keyedBy: CodingKeys.self)
       
-      self.about = try decodedUserContainer.decode(String.self, forKey: CodingKeys.about)
-      self.address = try decodedUserContainer.decode(String.self, forKey: CodingKeys.address)
-      self.age = try decodedUserContainer.decode(Int16.self, forKey: CodingKeys.age)
-      self.company = try decodedUserContainer.decode(String.self, forKey: CodingKeys.company)
-      self.email = try decodedUserContainer.decode(String.self, forKey: CodingKeys.email)
-      self.id = try decodedUserContainer.decode(String.self, forKey: CodingKeys.id)
-      self.isActive = try decodedUserContainer.decode(Bool.self, forKey: CodingKeys.isActive)
-      self.name = try decodedUserContainer.decode(String.self, forKey: CodingKeys.name)
+      self.about      = try decodedUserContainer.decode(String.self, forKey: CodingKeys.about)
+      self.address    = try decodedUserContainer.decode(String.self, forKey: CodingKeys.address)
+      self.age        = try decodedUserContainer.decode(Int16.self,  forKey: CodingKeys.age)
+      self.company    = try decodedUserContainer.decode(String.self, forKey: CodingKeys.company)
+      self.email      = try decodedUserContainer.decode(String.self, forKey: CodingKeys.email)
+      self.id         = try decodedUserContainer.decode(String.self, forKey: CodingKeys.id)
+      self.isActive   = try decodedUserContainer.decode(Bool.self,   forKey: CodingKeys.isActive)
+      self.name       = try decodedUserContainer.decode(String.self, forKey: CodingKeys.name)
       self.registered = try decodedUserContainer.decode(String.self, forKey: CodingKeys.registered)
 //      self.tags = try decodedUserContainer.decode(String.self, forKey: CodingKeys.tags)
    }
@@ -56,14 +56,14 @@ public class User: NSManagedObject,
       
       var encodedUserContainer = encoder.container(keyedBy: CodingKeys.self)
       
-      try encodedUserContainer.encode(about, forKey: CodingKeys.about)
-      try encodedUserContainer.encode(address, forKey: CodingKeys.address)
-      try encodedUserContainer.encode(age, forKey: CodingKeys.age)
-      try encodedUserContainer.encode(company, forKey: CodingKeys.company)
-      try encodedUserContainer.encode(email, forKey: CodingKeys.email)
-      try encodedUserContainer.encode(id, forKey: CodingKeys.id)
-      try encodedUserContainer.encode(isActive, forKey: CodingKeys.isActive)
-      try encodedUserContainer.encode(name, forKey: CodingKeys.name)
+      try encodedUserContainer.encode(about,      forKey: CodingKeys.about)
+      try encodedUserContainer.encode(address,    forKey: CodingKeys.address)
+      try encodedUserContainer.encode(age,        forKey: CodingKeys.age)
+      try encodedUserContainer.encode(company,    forKey: CodingKeys.company)
+      try encodedUserContainer.encode(email,      forKey: CodingKeys.email)
+      try encodedUserContainer.encode(id,         forKey: CodingKeys.id)
+      try encodedUserContainer.encode(isActive,   forKey: CodingKeys.isActive)
+      try encodedUserContainer.encode(name,       forKey: CodingKeys.name)
       try encodedUserContainer.encode(registered, forKey: CodingKeys.registered)
    }
 }

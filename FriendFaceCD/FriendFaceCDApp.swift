@@ -1,20 +1,28 @@
-//
-//  FriendFaceCDApp.swift
-//  FriendFaceCD
-//
-//  Created by Olivier Van hamme on 05/08/2021.
-//
+// FriendFaceCDApp.swift
+
+// MARK: - LIBRARIES
 
 import SwiftUI
 
+
 @main
 struct FriendFaceCDApp: App {
-    let persistenceController = PersistenceController.shared
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
-    }
+   
+   // MARK: - PROPERTIES
+   
+   let persistenceController = PersistenceController.shared
+   
+   
+   
+   // MARK: - COMPUTED PROPERTIES
+   
+   var body: some Scene {
+      
+      WindowGroup {
+         
+         ContentView()
+            .environment(\.managedObjectContext,
+                         persistenceController.container.viewContext)
+      }
+   }
 }

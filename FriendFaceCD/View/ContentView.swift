@@ -49,14 +49,9 @@ struct ContentView: View {
       }
       
       /// `3` Wraps the URL in a `URLRequest`,
-      /// which allows us to configure how the URL should be accessed .
       let urlRequest = URLRequest(url: _url)
       
       /// `4` Creates and starts a networking task from that URL request .
-      /// Handles the result of that networking task .
-      /// `URLSession` is the iOS class responsible for managing network requests .
-      /// It is very common to use the `shared` session that iOS creates for us to use .
-      /// but you can create your own .
       URLSession.shared.dataTask(with: urlRequest) {(data: Data?,
                                                      urlResponse: URLResponse?,
                                                      error: Error?) in
@@ -75,10 +70,6 @@ struct ContentView: View {
          }
          /// `4.4` If we are still here , it means there was a problem :
          print("Fetch failed: \(error?.localizedDescription ?? "Unknown Error")")
-      }.resume()
-      
-      URLSession.shared.dataTask(with: urlRequest) {data, response, error in
-         
       }.resume()
    }
 }
